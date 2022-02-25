@@ -11,6 +11,8 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { PetRegisterFormComponent } from './pet-register-form/pet-register-form.component';
 import { DoctorRegistrationComponent } from './doctor-registration/doctor-registration.component';
 import { RegDashboardComponent } from './reg-dashboard/reg-dashboard.component';
+import { HttpClientModule } from '@angular/common/http';
+import { OwnerService } from './services/owner.service';
 
 @NgModule({
   declarations: [
@@ -27,9 +29,10 @@ import { RegDashboardComponent } from './reg-dashboard/reg-dashboard.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [OwnerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

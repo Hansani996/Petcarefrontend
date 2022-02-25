@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Owner } from '../owner';
+import { OwnerService } from '../services/owner.service';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-register-form',
@@ -7,9 +10,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterFormComponent implements OnInit {
 
-  constructor() { }
+  
+//change owers !
+  public owners!: Owner[];
+    
+  constructor(private ownerService: OwnerService) { }
+
+  public getOwners(): void{
+    this.ownerService.getOwners().subscribe(
+      (response: Owner[]) => {
+        this.owners = response;
+      },
+      (error: HttpErrorResponse)=> {
+        alert(error.message);
+      }
+      
+    );
+  }
 
   ngOnInit(): void {
   }
 
+
+  
 }
