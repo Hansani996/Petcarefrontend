@@ -13,6 +13,9 @@ import { DoctorRegistrationComponent } from './doctor-registration/doctor-regist
 import { RegDashboardComponent } from './reg-dashboard/reg-dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { OwnerService } from './services/owner.service';
+import { VaccinationComponent } from './vaccination/vaccination.component';
+import { MedicalDataComponent } from './medical-data/medical-data.component';
+import { LoginUserDashboardComponent } from './login-user-dashboard/login-user-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { OwnerService } from './services/owner.service';
     LoginFormComponent,
     PetRegisterFormComponent,
     DoctorRegistrationComponent,
-    RegDashboardComponent
+    RegDashboardComponent,
+    VaccinationComponent,
+    MedicalDataComponent,
+    LoginUserDashboardComponent
   ],
   imports: [
     BrowserModule,
