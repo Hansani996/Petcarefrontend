@@ -16,6 +16,12 @@ import { OwnerService } from './services/owner.service';
 import { VaccinationComponent } from './vaccination/vaccination.component';
 import { MedicalDataComponent } from './medical-data/medical-data.component';
 import { LoginUserDashboardComponent } from './login-user-dashboard/login-user-dashboard.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { VaccineCrudComponent } from './vaccine-crud/vaccine-crud.component';
+import { VaccineHistoryComponent } from './vaccine-history/vaccine-history.component';
+import { DoctorDashboardComponent } from './doctor-dashboard/doctor-dashboard.component';
+import { AddMedicalDetailsComponent } from './add-medical-details/add-medical-details.component';
+
 
 @NgModule({
   declarations: [
@@ -29,14 +35,20 @@ import { LoginUserDashboardComponent } from './login-user-dashboard/login-user-d
     RegDashboardComponent,
     VaccinationComponent,
     MedicalDataComponent,
-    LoginUserDashboardComponent
+    LoginUserDashboardComponent,
+    VaccineCrudComponent,
+    VaccineHistoryComponent,
+    DoctorDashboardComponent,
+    AddMedicalDetailsComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [OwnerService],
   bootstrap: [AppComponent]

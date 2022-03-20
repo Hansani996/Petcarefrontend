@@ -25,6 +25,13 @@ img{
   background-color: gainsboro;
 }
 
+.title{
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .form-label{
   letter-spacing: 0px;
   color: #07020c;
@@ -40,7 +47,7 @@ img{
 }
 
 .btnlogin{
-  
+
     width: 20%;
     border: none;
     padding: 7px 32px;
@@ -52,7 +59,7 @@ img{
     font-weight: 500;
     border-radius: 4px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: blue;
+    background-color: #8c6604;
     width: 447px;
     color: #07020c;
     font-weight: 500;
@@ -61,6 +68,7 @@ img{
 @media screen and (max-width:425px) {
   .btnlogin{
     width: 160px;
+
+
   }
-  
 }

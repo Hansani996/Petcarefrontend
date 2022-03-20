@@ -1,7 +1,7 @@
 
 nav{
     background-color: #ffd712;
-    padding: 5px 5px; 
+    padding: 5px 5px;
 }
 
 ul li{
@@ -17,6 +17,8 @@ ul li a{
 ul li a:hover{
     color: black;
 }
-
+img{
+  width: 49px
+}
 
 /* #0620c7 */

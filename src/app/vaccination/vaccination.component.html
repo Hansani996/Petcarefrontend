@@ -1,41 +1,31 @@
 <div class="container">
-  <div class="row">
-    <div class="col">
-      <form class="form"> 
-        <div class="mb-3">
-          <label class="tile" for="test">Select Vaccine</label>
 
-          <input list="vaccine" name="typeOfvaccine" placeholder="Vaccine Name">
-          <datalist id="vaccine" >
-            <option value="Rabies">
-              <option value="Camine parvovirus">
-              <option value="Canime distemp2r">
-              <option value="Canime distemper-1">
-              <option value="Para influenza virus">
-              <option value="Laptospirosls">
-              <option value="Bordetella">
-              <option value="Lyme disease"> 
-          </datalist>
+
+  <!-- <img src="assets/img/last.jpg"> -->
+  <form  class="form"  [formGroup]="form" (ngSubmit)="submitForm()">
+    <p class="title">Pet Vaccination</p>
+    <div class="row">
+
+      <div class="col" >
+
+        <div class="mb-3">
+          <label  class="form-label">Vaccine Name</label>
+          <input type="text" class="form-control" id="VName" formControlName="vaccineName" >
         </div>
         <div class="mb-3">
-       
-          <label class="tile" for="start">Start date</label>
-
-      <input type="date" id="start" name="trip-start"
-       value="2022-03-02"
-       min="2022-03-02" max="2022-03-31">
+          <label  class="form-label">Vaccine Code</label>
+          <input type="text" class="form-control" id="Vcode" formControlName="vaccineCode">
         </div>
-      
-        
+        <div class="mb-3">
+          <label  class="form-label">Date</label>
+          <input type="text" class="form-control" id="date" formControlName="date">
+        </div>
+      </div>
 
+    </div>
 
-      </form>
-     
+    <button type="submit" class="btnSubmit"  >Submit</button>
+  </form>
+</div>
 
- </div>
- </div>
- 
-
-
-  
 

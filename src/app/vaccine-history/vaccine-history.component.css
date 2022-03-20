@@ -1,0 +1,29 @@
+.container{
+  padding-top: 5%;
+  background-image: url("../../assets/img/last.jpg");
+  background-size: 100% 100%;
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 7%;
+  max-height: 100%;
+}
+
+.form{
+  padding: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: gainsboro;
+  opacity: 0.9;
+  padding-bottom: 60px;
+}
+
+.title{
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}

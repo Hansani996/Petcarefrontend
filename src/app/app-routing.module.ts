@@ -10,6 +10,11 @@ import { PetRegisterFormComponent } from './pet-register-form/pet-register-form.
 import { RegDashboardComponent } from './reg-dashboard/reg-dashboard.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { VaccinationComponent } from './vaccination/vaccination.component';
+import {VaccineCrudComponent} from "./vaccine-crud/vaccine-crud.component";
+import {VaccineHistoryComponent} from "./vaccine-history/vaccine-history.component";
+import {DoctorDashboardComponent} from "./doctor-dashboard/doctor-dashboard.component";
+import {AddMedicalDetailsComponent} from "./add-medical-details/add-medical-details.component";
+
 
 const routes: Routes = [
 
@@ -22,7 +27,16 @@ const routes: Routes = [
 {path: 'reg-dashboard',component:RegDashboardComponent},
 {path: 'vaccination_form',component:VaccinationComponent},
 {path:'medical_histry',component:MedicalDataComponent},
-{path:'user_dashboard',component:LoginUserDashboardComponent}
+{path:'user_dashboard',component:LoginUserDashboardComponent},
+  {path: 'register_dashboard',component:RegDashboardComponent},
+
+  {path: 'login_user_dashboard',component:LoginUserDashboardComponent},
+  {path: 'vaccineDetails',component:VaccineCrudComponent},
+
+  {path: 'vaccineHistory',component:VaccineHistoryComponent},
+  {path:'doctorDashboard',component:DoctorDashboardComponent},
+  {path: 'addMedicalDetails',component:AddMedicalDetailsComponent}
+
 
 ];
 

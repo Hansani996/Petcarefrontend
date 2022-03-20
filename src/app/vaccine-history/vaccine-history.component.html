@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <form class="form">
+        <p class="title">Vaccine Details</p>
+        <table  id="vaccineData" class="table">
+          <thead>
+          <tr >
+            <th scope="col">Vaccine ID</th>
+            <th scope="col">vaccine Code</th>
+            <th scope="col">vaccine Name</th>
+            <th scope="col">Date</th>
+
+          </tr>
+          </thead>
+          <tbody class="tboday">
+          <tr *ngFor="let vaccine of vaccineDetails">
+            <td>vaccine.id</td>
+            <td>vaccine.vaccineCode</td>
+            <td>vaccine.vaccineName</td>
+            <td>vaccine.date</td>
+
+          </tr>
+
+
+          </tbody>
+        </table>
+
+      </form>
+    </div>
+  </div>
+</div>
+

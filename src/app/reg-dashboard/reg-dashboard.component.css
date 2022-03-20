@@ -2,3 +2,19 @@ img{
     padding: 24%;
     border: 2px;
 }
+
+
+
+.container{
+  padding-top: 5%;
+  background-image: url("../../assets/img/last.jpg");
+  background-size: 100% 100%;
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 7%;
+  max-height: 100%;
+  opacity: 0.5;
+}

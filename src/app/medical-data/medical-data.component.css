@@ -20,4 +20,10 @@
     opacity: 0.9;
     padding-bottom: 60px;
   }
-  
+
+.title{
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}

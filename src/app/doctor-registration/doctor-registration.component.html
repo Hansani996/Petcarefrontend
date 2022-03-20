@@ -1,47 +1,47 @@
 <div class="container">
 
-  
+
     <!-- <img src="assets/img/last.jpg"> -->
-<form  class="form">
+<form  class="form" [formGroup]="form" (ngSubmit)="submitform()">
     <p class="title">Veterinarian Registration</p>
     <div class="row">
-     
+
         <div class="col">
-            
+
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email </label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control" formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">First Name</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label  class="form-label">First Name</label>
+                <input type="text" class="form-control" formControlName="firstName" id="firstName">
               </div>
               <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="password">
+                  <label  class="form-label">Password</label>
+                  <input type="password" class="form-control"  formControlName="pw" id="password">
                 </div>
         </div>
 
         <div class="col">
             <div class="mb-3">
                 <label for="nic" class="form-label">NIC Number</label>
-                <input type="text" class="form-control" id="nic">
+                <input type="text" class="form-control" formControlName="nic" id="nic">
               </div>
               <div class="mb-3">
                 <label for="lastname" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="lastName">
+                <input type="text" class="form-control"  formControlName="lastName" id="lastName">
               </div>
               <div class="mb-3">
-                <label for="confirmPw" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label  class="form-label">Mobile Number</label>
+                <input type="text" class="form-control" formControlName="mobNumber" id="exampleInputPassword1">
               </div>
         </div>
    </div>
- 
+
     <button type="submit" class="btnSubmit"  >Submit </button>
   </form>
   </div>
 
 
-  
+
 
